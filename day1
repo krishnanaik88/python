@@ -1,0 +1,261 @@
+
+# x = int(10.5) 
+
+# y = int("123")  
+
+# z = int(True) 
+
+# print(x,y,z)
+
+# ax,bx,cx = 50,20,3.5
+# print("ax=",ax,"bx=",bx,"cx=",cx)
+# #arithemetic opration on 'a' and 'b'
+# a=10
+# b=20
+# c=a+b
+# d=a-b
+# x=a*b
+# z=a/b
+# print("c",c,"d",d,"x",x,"z",z)
+
+# list_var=[12,23,34,45,55]
+# tupal_var=(12,3,24,42,3)
+# set_var={12,32,24,422,23}
+# dict_var={'a' :12,'b' :22,'c' :2}
+# print("list=",list_var[-1:-3:-1]); print("tupal=",tupal_var);print("dict=",dict_var)
+# list_var[1]=65
+# list_var[1:6]=[55,23,65,11,38,88]
+# print(list_var)
+
+
+# list_var.append(7)
+# print(list_var)
+# list_var.extend([99,88.45,99])
+# print(list_var)
+# list_var.insert(2,75)
+# print(list_var)
+# list_var.remove(75)
+# print(list_var)
+# list_var. pop(2)
+# print(list_var)
+# list_var. sort()
+# print(list_var)
+# list_var. reverse()
+# print(list_var)
+
+#tupal_var=(12,3,24,42,3)
+#print(tupal_var+(33,55))
+# tupal_var.append(7)
+# print(tupal_var)
+# tupal_var.extend([99,88.45,99])
+# print(tupal_var)
+# tupal_var.insert(2,75)
+# print(tupal_var)
+# tupal_var.remove(12)
+# print(tupal_var)
+# tupal_var. pop(2)
+# print(tupal_var)
+# tupal_var. sort()
+# print(tupal_var)
+# tupal_var. reverse()
+# print(tupal_var)
+
+#set_var={12,32,24,422,23}
+
+# print(f"type of set_var = {type(set_var)}")
+# set_var.add(5)
+# print(set_var)
+# set_var.discard(244)
+# print(set_var)
+# union_set={44,22,66}
+# print(union_set)
+# set_difference=set_var.difference(union_set)
+# print(set_difference)
+
+#dict_var={'a' :12,'b' :22,'c' :2}
+
+# print("dictionary=", dict_var)
+# dict_var[c]=3
+# print("added new key value in dictionary =", dict_var)
+# dict_var[1]=44
+# print("updated dictionary key by 1 =",dict_var)
+# dict_var.pop('c')
+# print("remove dictionary key c=",dict_var)
+# keys=dict_var.keys()
+# print("keys are =",dict_var)
+# valus=dict_var.values()
+# print("value of the given dictionary is=",dict_var)
+# items=dict_var.items()
+# print("the items are",dict_var)
+
+#arithemetic operatiors
+# a=20;b=50
+# print("{a}+{b}=",{a+b})
+# print("{a}-{b}=",{a-b})
+# print("{a}X{b}=",{a*b})
+# print("{a}%{b}=",{a%b})
+# #comparesion
+# print("{a}=={b}:",{a==b})
+# print("{a}>{b}:",{a>b})
+# print("{a}<{b}:",{a<b})
+# print("{a}>={b}:",{a>=b})
+# print("{a}<={b}:",{a<=b})
+
+# #logical
+# t,f=True,False
+# print("t and f:",{t and f})
+# print("t or f:",{t or f})
+# print("not f:",{not f})
+
+# user_input="192.168.1.1"
+# a=user_input.split(".")
+# ipv4=".".join(f"{int(number):08b}" for number in a)
+# print(ipv4)
+
+# import calendar as calendar
+# print("----------calendar program in python------\n")
+# print("enter x for exit")
+# y = input("enter a year:")
+# if y == 'x':
+#     exit()
+# else:
+#     m = input("enter the month:")
+#     yy = int(y)
+#     mm = int(m)
+#     print("\n", calendar.month(yy, mm))
+  
+  
+  
+# num = 12
+# if num > 0:
+#     print(f"Number {num} is positive")
+# elif num < 0:
+#     print(f"Number {num} is negative")
+# else:
+#     print(f"Number {num} is zero or not a valid input")
+
+# for loop
+# for i in range(1,5):
+#     print(i)
+#     for i in  range(5,1,-1):
+#         print(i)  
+# 
+
+# # while
+# count=1
+# while count<=5:
+#     print(count)
+#     count=count+1  
+
+#     #brake 
+# for i in range(1,10):
+#     if i==5:
+#         print("brake applay at",i)
+#         break
+#         print(f"loop itrate :{i}")    
+
+# continue
+# for i in range(1,10):
+#     if i%2==0:
+#         continue
+#     print(i)
+
+# pass 
+# for i in range(1,5):
+#     pass
+
+
+# function  
+# def greet():
+#     print("hello")
+# greet()
+# def add(x,y):
+#     return x+y
+# res=add(5,2)
+# print("result")        
+
+
+
+# import ipaddress
+
+# def calculate_network_details(num_pcs):
+#     try:
+#         if num_pcs >= 254 or num_pcs <= 0:
+#             print("Error: Please enter a number below 254 and above 0.")
+#             return
+
+       
+#         required_hosts = num_pcs + 2
+#         prefix_length = 32
+
+
+#         while (2 ** (32 - prefix_length)) < required_hosts:
+#             prefix_length -= 1
+
+       
+#         network = ipaddress.ip_network(f"192.168.1.0/{prefix_length}", strict=False)
+
+        
+#         hosts = list(network.hosts())
+
+#         print("User Input Number Below 254:", num_pcs)
+#         print(f"Host Range: {hosts[0]} to {hosts[-1]}")
+#         print(f"Network Address: {network.network_address}")
+#         print(f"Broadcast Address: {network.broadcast_address}")
+#         print(f"Subnet Mask: {network.netmask} i.e. /{prefix_length}")
+
+#     except Exception as e:
+#         print(f"Error: {e}")
+
+# if __name__ == "__main__":
+#     try:
+        
+#         predefined_value = 128 
+#         print("Predefined Input Value:", predefined_value)
+#         calculate_network_details(predefined_value)
+#     except ValueError:
+#         print("Error: Please enter a valid number.")
+
+
+import calendar as calendar
+
+def display_month_calendar(year, month):
+    try:
+        print(calendar.month(year, month))
+    except ValueError as e:
+        print(f"Error: {e}. Please ensure the month is between 1 and 12 and the year is valid.")
+
+def display_year_calendar(year):
+    try:
+        print(calendar.TextCalendar().formatyear(year))
+    except ValueError as e:
+        print(f"Error: {e}. Please ensure the year is valid.")
+
+def main_menu():
+    while True:
+        print("\nMenu:")
+        print("1. Print specific month calendar")
+        print("2. Print specific year calendar")
+        print("3. Exit")
+
+        choice = input("Enter your choice (1-3): ")
+
+        if choice == "1":
+            try:
+                year = int(input("Enter year: "))
+                month = int(input("Enter month (1-12): "))
+                display_month_calendar(year, month)
+            except ValueError:
+                print("Error: Please enter valid numerical values for year and month.")
+        elif choice == "2":
+            try:
+                year = int(input("Enter year: "))
+                display_year_calendar(year)
+            except ValueError:
+                print("Error: Please enter a valid numerical value for year.")
+        elif choice == "3":
+            print("Exiting the program.")
+            break
+        else:
+            print("Invalid choice. Please select from the menu options.")
+
